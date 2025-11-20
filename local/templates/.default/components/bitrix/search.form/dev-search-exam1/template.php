@@ -1,0 +1,26 @@
+<?php
+if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
+{
+	die();
+}
+/** @var array $arParams */
+/** @var array $arResult */
+/** @global CMain $APPLICATION */
+/** @global CUser $USER */
+/** @global CDatabase $DB */
+/** @var CBitrixComponentTemplate $this */
+/** @var string $templateName */
+/** @var string $templateFile */
+/** @var string $templateFolder */
+/** @var string $componentPath */
+/** @var CBitrixComponent $component */
+$this->setFrameMode(true);?>
+<div class="col-lg-6">
+    <h4>Поиск</h4>
+    <form action="<?=$arResult['FORM_ACTION']?>">
+        <div class="search-form">
+            <input class="input-seach type="text" name="q" value="" size="15" maxlength="50" /></td>
+            <input class="button-seach" name="s" type="submit" value="<?=GetMessage('BSF_T_SEARCH_BUTTON');?>" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Депозиты";
+$arDirProperties = Array(
+
+);
+?>
